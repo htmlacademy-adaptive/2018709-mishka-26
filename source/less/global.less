@@ -1,0 +1,78 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-body {
+  font-family: "Open Sans", "Arial", sans-serif;
+  background: #ffffff;
+  color: #444444;
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  margin: 0 auto;
+  min-height: 100%;
+  width: 320px;
+  box-shadow: 0 1px 0 #ededed, inset 0 1px 0 #ececec;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+  }
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.button {
+  padding: 14px 0;
+  box-sizing: border-box;
+  display: block;
+  width: 260px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #444444;
+  background-color: #ffffff;
+  border: 2px solid #444444;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    width: 292px;
+    font-size: 17px;
+  }
+}
+
+.button:hover {
+  color: #ffffff;
+  background: #444444;
+  border: 2px solid #444444;
+}
+
+.button:active {
+  color: #ffffff;
+  opacity: 0.3;
+  background: #444444;
+  border: 2px solid #444444;
+}
